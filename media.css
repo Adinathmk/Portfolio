@@ -1,0 +1,39 @@
+   /* ---------- Responsive ---------- */
+    @media (max-width: 768px) {
+      .skills-container {
+        flex-direction: column;
+      }
+
+      .skills-column {
+        min-width: 100%;
+      }
+
+      .radial-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-left, .contact-right {
+        flex: 100%;
+      }
+}
+@media (max-width: 833px){
+  .main-about .pic {
+    display: none;
+}
+}
+@media (max-width: 1185px) {
+  .main {
+    height: auto;
+  }
+    .main-about .pic {
+    display: none;
+}
+  
+}
+@media (max-width: 1028px) {
+  .projects{
+    height: auto;
+  }
+}
+
+
