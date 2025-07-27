@@ -18,6 +18,9 @@ body{
 .nav-link{
     color: rgb(255, 255, 255) !important;
 }
+.navbar-brand:hover {
+  color: rgba(238, 0, 0, 0.777) !important;
+}
 /* ------------------------------------------------------------------------MAIN-------------------------------------------------------------------- */
 .main {
   display: flex;
@@ -78,8 +81,10 @@ body{
   max-width: 80%;
   height: auto;
   padding: auto;
-  border-radius: 12px;
+  border-radius: 20PX;
   object-fit: cover;
+  transition: all 0.5S;
+  margin-top:   30px;
 }
 .img-div{
     display: flex;
@@ -90,6 +95,16 @@ body{
   max-width: 500px;
   min-width: 400px;
 }
+.photo:hover img {
+            transform: 
+                perspective(1000px) 
+                rotateY(20deg) 
+                scale(1.05);
+            border-color: #e1a398;
+            box-shadow: 
+                0 0 30px #f75555,
+                0 0 60px #ffc66480;
+        }
 
 
 /* ----------------------------------------------------------------ABOUT-ME-------------------------------------------------------------------- */
@@ -156,9 +171,15 @@ body{
 }
 
 .pic img {
-    height: 50vh;           /* 50% of viewport height */
-    object-fit: contain;    /* preserves aspect ratio */
-    border-radius: 100%;    /* optional: rounded corners */
+    height: 50vh;           
+    object-fit: contain;    
+    border-radius: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.pic img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 40px rgba(255, 0, 0, 0.336), 
+              0 0 10px rgba(255, 0, 0, 0.241);
 }
 
 .about-me h1 {
@@ -202,7 +223,7 @@ body{
       transform: translateX(-50%);
       width: 80px;
       height: 4px;
-      background: rgb(255, 0, 79);
+      background: rgb(255, 0, 0);
       border-radius: 2px;
     }
 
@@ -234,8 +255,8 @@ body{
       font-size: 1.8rem;
       margin-bottom: 1.5rem;
       padding-bottom: 0.5rem;
-      border-bottom: 2px solid rgb(255, 0, 79);
-      color: rgb(255, 0, 79);
+      border-bottom: 2px solid rgb(255, 0, 0);
+      color: rgba(255, 0, 0, 0.799);
       text-align: center;
     }
 
@@ -259,7 +280,7 @@ body{
 
     .skill-progress {
       height: 100%;
-      background: linear-gradient(90deg, rgb(182, 2, 59), rgb(255, 0, 79));
+      background: linear-gradient(90deg, rgb(182, 2, 59), rgb(255, 0, 0));
       position: relative;
       width: 0;
     }
@@ -317,7 +338,7 @@ body{
 
     .radial-progress {
       fill: none;
-      stroke: rgb(255, 0, 79);
+      stroke: rgb(255, 0, 0);
       stroke-width: 8;
       stroke-linecap: round;
       stroke-dasharray: 314;
@@ -392,7 +413,7 @@ body{
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.6), #f46a6a);
+  background: linear-gradient(rgba(255, 255, 255, 0.6), #ff0000af);
   border-radius: 10px;
   position: absolute;
   left:0;
@@ -425,7 +446,7 @@ body{
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
-  background: #ad1717;
+  background: #ff0000;
   width: 60px;
   height: 60px;
   border-radius: 50%;

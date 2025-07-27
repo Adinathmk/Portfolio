@@ -75,6 +75,17 @@
   .main-1{
     margin: 0px;
   }
+  .layer P{
+  font-weight: 500;
+  font-size: small;
+  }
+
+  .layer h3{
+    font-size: 20px;
+  }
+  .layer a{
+ display: none;
+  }
 }
 
 
