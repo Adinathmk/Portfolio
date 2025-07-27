@@ -11,8 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
 </head>
 <body>
@@ -29,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#main">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#main-about">About</a>
@@ -52,27 +55,27 @@
 <!-- -----------------------------------------------------------------------MAIN--------------------------------------------------------------- -->
     
     <div class="main" id="main">
-        <div class ="main-1">            
+        <div class ="main-1" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">            
             <div class="about">
                 <h1 id="name"><span>HI! I AM </span><br><span>ADINATH M K</span></h1>
             </div>
-            <div class="intro-1">
+            <div class="intro-1 mt-3">
                 <h2>And I'm a <span class="typedText"></span></h2>
             </div>
-            <div class="intro-2">
+            <div class="intro-2 mt-3">
                 <p>I'm a passionate Python Full Stack Developer who transforms complex ideas into seamless, scalable, and impactful web experiences through clean code and creative problem-solving.</p>
             </div>
-            <div class="featured-text-btn">
-                <button class="btn blue-btn">Hire Me</button>
-                <button class="btn"><a class="btn" href="images/Resume.pdf" download>Download CV <i class="uil uil-file-alt"></i></a></button>
-</i></button>
+            <div class="featured-text-btn"  >
+                <a href="#contact" class="btn blue-btn">Hire Me</a>
+                <a href="images/Resume.pdf" class="btn" download>Download CV <i class="uil uil-file-alt"></i></a>
             </div>
+
 
         </div>
 
 
 
-        <div class="photo">
+        <div class="photo" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
             <div class="img-div">
             <img src="images/adhi.png">
             </div>
@@ -81,11 +84,11 @@
 
     <!-- --------------------------------------------------------------ABOUT ME----------------------------------------------------------------- -->
 
-    <div class="main-about"id="main-about">
+    <div class="main-about"id="main-about" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
         <div class="pic">
-            <img src="images/adhi.png">
+            <img src="images/Adhi1.jpeg">
         </div>
-        <div class="about-me">
+        <div class="about-me" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
             <h1>ABOUT <span>ME</span></h1>
             <h2>Python Full Stack Developer</h2>
             <p>I’m a passionate and self-driven Python Full Stack Developer who thrives on turning innovative ideas into high-performance digital solutions. With a strong foundation in backend technologies like Django and Flask, and a flair for building sleek, responsive frontend interfaces using modern frameworks, I create seamless, scalable, and secure web applications that deliver real-world value. I believe in writing clean, maintainable code and continuously improving my craft through learning and collaboration. Whether working independently or as part of a team, I bring creativity, problem-solving, and a deep commitment to excellence in every project I take on. My mission is not just to build websites—but to build solutions that make an impact, engage users, and drive success.</p>
@@ -97,7 +100,7 @@
 <section class="skills-section" id="skills-section">
     <h1 class="heading">My <span>Skills</span></h1>
     
-    <div class="skills-container">
+    <div class="skills-container" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
       <!-- Technical Skills Column -->
       <div class="skills-column">
         <h2>Technical Skills</h2>
@@ -149,7 +152,7 @@
       </div>
       
       <!-- Professional Skills Column -->
-      <div class="skills-column">
+      <div class="skills-column" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
         <h2>Professional Skills</h2>
         
         <div class="radial-container">
@@ -201,14 +204,14 @@
     </div>
   </section>
   <!-- -----------------------------------------------------------------PROJECTS------------------------------------------------------------------ -->
- <div class="projects" id="projects">
-    <h1>Projects</h1>
-    <div class="work-list">
+ <div class="projects" id="projects" >
+    <h1 data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">Projects</h1>
+    <div class="work-list" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
       <div class="work">
         <img src="images/project1.jpg" alt="Project 1">
         <div class="layer">
           <h3>Brain Tumour Detection</h3>
-          <p>"Detects and classifies brain tumours from MRI scans using a U-Net model with segmentation, volume analysis, and severity grading.</p>
+          <p>Detects and classifies brain tumours from MRI scans using a U-Net model with segmentation, volume analysis, and severity grading.</p>
           <a href="#"><i class="fa-solid fa-link"></i></a>
         </div>
       </div>
@@ -216,7 +219,7 @@
         <img src="images/project2.jpg" alt="Project 2">
         <div class="layer">
           <h3>Visual price checker</h3>
-          <p>"A Flask app that compares product prices from images using Google Cloud Vision and web scraping.</p>
+          <p>A Flask app that compares product prices from images using Google Cloud Vision and web scraping.</p>
           <a href="#"><i class="fa-solid fa-link"></i></a>
         </div>
       </div>
@@ -224,37 +227,38 @@
         <img src="images/project3.jpg" alt="Project 3">
         <div class="layer">
           <h3>Ixigo Clone webpage</h3>
-          <p>"A responsive clone of the Ixigo travel website built using HTML and CSS. It replicates key UI elements like navigation, search bar, and booking layout.</p>
+          <p>A responsive clone of the Ixigo travel website built using HTML and CSS. It replicates key UI elements like navigation, search bar, and booking layout.</p>
           <a href="#"><i class="fa-solid fa-link"></i></a>
         </div>
       </div>
       
-    </div>
-    <a href="" class="btn">See more</a>
+    </div >
+
+    <a href="" class="btn"data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">See more</a>
 </div>
 <!-- ------------------------------------------------------------------CONTACT--------------------------------------------------------------- -->
 
 <div id="contact">
   <div class="container">
     <div class="row">
-      <div class="contact-left">
+      <div class="contact-left"data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
           <h1 class="sub-title">Contact ME</h1>
           <p><i class="fa-solid fa-paper-plane"></i>adinathmkclt@gmail.com</p>
           <p><i class="fa-solid fa-phone"></i>+91-8592044236</p>
           <div class="social-icons">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Adinathmk" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/____adhi_.__/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/adinath-m-k-957348306/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           </div>
       </div>
       <div class="contact-right ">
-        <form>
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
-          <button type="submit">Submit</button>
-        </form>
+       <form onsubmit="sendMail(event)">
+  <input type="text" name="Name" placeholder="Your Name" required id="Name">
+  <input type="email" name="email" placeholder="Your Email" required id="email">
+  <textarea name="Message" rows="6" placeholder="Your Message" id="message"></textarea>
+  <button type="submit">Submit</button>
+   <span id="status-message"></span>
+</form>
           
       </div>
     </div>
@@ -263,7 +267,7 @@
 <!-- --------------- FOOTER --------------- -->
     <footer>
         <div class="bottom-footer">
-            <p>&copy; <A:mail></A:mail>dinathmk 2025</a> - All rights reserved</p>
+            <p>&copy; <a>Adinathmk 2025</a> - All rights reserved</p>
         </div>
     </footer>
 
@@ -340,6 +344,64 @@
     backSpeed: 80,
     backDelay: 2000
   });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Vn7qQ4WI3A3jCy_ju",
+      });
+   })();
+   function sendMail(e) {
+  e.preventDefault(); // Prevent form reload
+
+  const params = {
+    name: document.getElementById("Name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "service_5otfz91";
+  const templateID = "template_ptblkmv";
+
+  const statusMessage = document.getElementById("status-message");
+  statusMessage.style.color = "#00c853"; // green
+  statusMessage.innerText = "Sending...";
+
+  emailjs.send(serviceID, templateID, params)
+    .then(res => {
+      document.getElementById("Name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+
+      statusMessage.style.color = "#00c853"; // green
+      statusMessage.innerText = "Message sent successfully!";
+
+      // Auto-hide after 4 seconds
+      setTimeout(() => {
+        statusMessage.innerText = "";
+      }, 4000);
+    })
+    .catch(err => {
+      console.log("Failed to send", err);
+      statusMessage.style.color = "#d50000"; // red
+      statusMessage.innerText = "Failed to send message. Try again.";
+
+      // Auto-hide after 4 seconds
+      setTimeout(() => {
+        statusMessage.innerText = "";
+      }, 1000);
+    });
+}
+
+
+
 </script>
 
 

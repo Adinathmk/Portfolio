@@ -16,12 +16,18 @@
         flex: 100%;
       }
 }
+@media (max-width: 1028px) {
+  .projects{
+    height: auto;
+  }
+}
+
 @media (max-width: 833px){
   .main-about .pic {
     display: none;
 }
 }
-@media (max-width: 1185px) {
+@media (max-width: 1048px) {
   .main {
     height: auto;
   }
@@ -30,10 +36,48 @@
 }
   
 }
-@media (max-width: 1028px) {
-  .projects{
-    height: auto;
+
+@media (max-width: 1307px) {
+  .main-1 {
+    margin-left: 20px; /* or any small value */
+  }
+  
+}
+@media (max-width: 1220px) {
+  .main{
+    gap:20px; /* or any small value */
+  }
+  .main img{
+    max-height: 360px;
+    margin-bottom: 20px;
+  }
+  .main-1 {
+   font-size:smaller; 
+  }
+.about h1 {
+    font-size: 2rem;
+  }
+
+  .intro-1 h2 {
+    font-size: 1.4rem;
+  }
+
+  .intro-2 p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 }
+@media (max-width: 651px){
+  .main-1{
+    margin: 0px;
+  }
+}
+
+
+
 
 

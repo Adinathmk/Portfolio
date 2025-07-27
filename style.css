@@ -47,7 +47,7 @@ body{
   text-align: center;
 }
 #name {
-  background: linear-gradient(to right, #a64bf4, #ff4fd8);
+  background: linear-gradient(to right, #eb8282, #ff0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
@@ -93,29 +93,49 @@ body{
 
 
 /* ----------------------------------------------------------------ABOUT-ME-------------------------------------------------------------------- */
-.featured-text-btn{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-.featured-text-btn .btn{
-  margin: 10px;
-  width:300px;
-  padding: 1px;
-  a{
-    padding:5px;
-    height: 100%;
-    border: none;
-  }
+.featured-text-btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* allows wrap on small screens */
+  margin-top: 20px;
 }
 
-.featured-text-btn>.blue-btn{
-    background: var(--first-color);
-    color: var(--color-white);
+.featured-text-btn .btn {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid rgb(252, 51, 51);
+  color: white;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+  font-size: 1rem;
+  display: inline-block;
+  flex: 1 1 auto;
+  max-width: 200px; /* Keep them same size */
 }
-.featured-text-btn>.blue-btn:hover{
-    background: var(--first-color-hover);
+.featured-text-btn a{
+  margin: 0px;
 }
+
+/* Primary button */
+.featured-text-btn .blue-btn {
+  background: var(--first-color);
+  color: var(--color-white);
+   border: 1px solid rgb(252, 51, 51);;
+}
+
+/* Hover effects */
+.featured-text-btn .blue-btn:hover {
+  background: var(--first-color-hover);
+}
+
+.featured-text-btn .btn:hover {
+  background:rgb(252, 51, 51);;
+  color: black;
+}
+
+
 /* ---------------- */
 .main-about {
     display: flex;
@@ -124,7 +144,7 @@ body{
     height: 100vh;          /* full screen height */
     padding: 2rem;
     flex-wrap: wrap;  
-    background-color: #1e1e1e;    
+    background-color: #151515af;    
 }
 .pic{
     flex:1;
@@ -198,7 +218,7 @@ body{
     .skills-column {
       flex: 1;
       min-width: 300px;
-      background: rgba(255, 255, 255, 0.05);
+      background: #151515af;
       backdrop-filter: blur(10px);
       padding: 2rem;
       border-radius: 15px;
@@ -255,7 +275,7 @@ body{
       top: -25px;
       color: #fff;
       font-weight: bold;
-      background: #333;
+      background: #151515af;
       padding: 2px 8px;
       border-radius: 15px;
       font-size: 0.8rem;
@@ -344,6 +364,9 @@ body{
   padding:200px 100px ;
   justify-content: center;
   text-align: center;
+  h1{
+    color: #ff0000;
+  }
 }
 .work-list {
   display: grid;
@@ -369,7 +392,7 @@ body{
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.6), #262626);
+  background: linear-gradient(rgba(255, 255, 255, 0.6), #f46a6a);
   border-radius: 10px;
   position: absolute;
   left:0;
@@ -418,7 +441,7 @@ body{
   display: block;
   margin:50px auto;
   width:fit-content;
-  border:1px solid #fff04f;
+  border:1px solid rgb(252, 51, 51);;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
@@ -538,14 +561,6 @@ form input,form textarea{
 .contact-right button:hover {
   background: #e60045;
 }
-
-
-
-
-
-
-
-
 
 /* ------------------------------------------------------------------------ FOOTER BOX -------------------------------------------------------------------------- */
 footer{
