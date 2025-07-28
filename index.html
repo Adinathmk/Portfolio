@@ -229,7 +229,7 @@
         <div class="layer">
           <h3>Ixigo Clone webpage</h3>
           <p>A responsive clone of the Ixigo travel website built using HTML and CSS. It replicates key UI elements like navigation, search bar, and booking layout.</p>
-          <a href="#"><i class="fa-solid fa-link"></i></a>
+          <a href="#" ><i class="fa-solid fa-link"></i></a>
         </div>
       </div>
       
@@ -311,7 +311,7 @@
 
 
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
-    <!-- <h1 id="hi">Hello, world!</h1> -->
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script>
     function isInViewport(element) {
@@ -360,7 +360,7 @@
       });
    })();
    function sendMail(e) {
-  e.preventDefault(); // Prevent form reload
+  e.preventDefault(); 
 
   const params = {
     name: document.getElementById("Name").value,
@@ -372,7 +372,7 @@
   const templateID = "template_ptblkmv";
 
   const statusMessage = document.getElementById("status-message");
-  statusMessage.style.color = "#00c853"; // green
+  statusMessage.style.color = "#00c853";  
   statusMessage.innerText = "Sending...";
 
   emailjs.send(serviceID, templateID, params)
@@ -381,20 +381,20 @@
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
 
-      statusMessage.style.color = "#00c853"; // green
+      statusMessage.style.color = "#00c853";  
       statusMessage.innerText = "Message sent successfully!";
 
-      // Auto-hide after 4 seconds
+      
       setTimeout(() => {
         statusMessage.innerText = "";
       }, 4000);
     })
     .catch(err => {
       console.log("Failed to send", err);
-      statusMessage.style.color = "#d50000"; // red
+      statusMessage.style.color = "#d50000";  
       statusMessage.innerText = "Failed to send message. Try again.";
 
-      // Auto-hide after 4 seconds
+        
       setTimeout(() => {
         statusMessage.innerText = "";
       }, 1000);
