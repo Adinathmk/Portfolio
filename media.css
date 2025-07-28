@@ -96,13 +96,7 @@
   font-size: 10px;
   }
   .layer a{
-    height: 20px;
-    width: 50px;
-    background-color: rgba(0, 0, 0, 0.268);
-    border:solid red;
-    i{
-      display: none;
-    }
+    display: none;
   }
 
 }
