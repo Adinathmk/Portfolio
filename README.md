@@ -1,7 +1,7 @@
 # 💼 Adhi's Developer Portfolio
 
 Welcome to my personal portfolio website! 🚀  
-I'm Adinath M K — a passionate final-year B.Tech Computer Science student from College of Engineering Munnar, interested in Web Development and AI Engineering.
+'m a passionate Python Full Stack Developer who transforms complex ideas into seamless, scalable, and impactful web experiences through clean code and creative problem-solving.
 
 This portfolio showcases my technical skills, projects, and achievements in a clean, responsive, and interactive layout.
 
