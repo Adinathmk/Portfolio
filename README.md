@@ -9,7 +9,8 @@ This portfolio showcases my technical skills, projects, and achievements in a cl
 
 ## 🌐 Live Demo
 
-[🔗 View Live Website]([https://your-portfolio-link.com](https://adinathmk.github.io/Portfolio/)])  
+[🔗 View Live Website]([🔗 View Live Website](https://adinathmk.github.io/Portfolio/)
+)  
 
 ---
 
